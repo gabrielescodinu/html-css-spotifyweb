@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+/* Utility classes */
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+body {
+  background-color: #333;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* menu left */
+.logo {
+  height: 50px;
+  margin: 20px;
+}
+.logo-container {
+  position: relative;
+}
+.logo-container p {
+  display: inline-block;
+  top: 25%;
+  position: absolute;
+  font-size: 30px;
+}
+.nav-left-link {
+  position: relative;
+}
+.nav-left img {
+  height: 30px;
+  margin-left: 20px;
+}
+.nav-left p {
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  color: white;
+  padding-left: 20px;
+}
+.nav-left input {
+  background: black;
+  border: 0px;
+  color: white;
+  font-size: 15px;
+}
+.nav-left-link:hover {
+  border-left: 3px solid yellowgreen;
+}
+/* playlist */
+.playlist {
+  margin-bottom: 100px;
+}
+.playlist h1 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.playlist img {
+  height: 50px;
+  margin-left: 20px;
+  border: 1px solid white;
+  padding: 10px;
+}
+.nav-left-playlist p {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  color: white;
+  padding-left: 20px;
+}
+.nav-left-playlist {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.playlist-name {
+  display: block;
+  color: grey;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.playlist-name:hover {
+  color: white;
+}
+/* install app */
+.install-app {
+  margin-left: 20px;
+  position: relative;
+}
+.download-icon {
+  height: 20px;
+}
+.install-app p {
+  display: inline-block;
+  position: absolute;
+  margin-left: 20px;
+  color: grey;
+}
+.install-app hr {
+  margin-top: 10px;
+  width: 80%;
+  opacity: 50%;
+}
+.profile-icon {
+  height: 30px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: grey;
+}
+.profile {
+  position: relative;
+  margin-left: 20px;
+}
+.profile p {
+  position: absolute;
+  top: 45%;
+  margin-left: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+#site_content{
+  height: calc(100% - 60px);
+}
+aside.main_menu {
+  min-width: 300px;
+  background-color: black;
+}
+.covers_section {
+  background-color: aquamarine;
+  padding: 20px;;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 60px;
+  /* margin-top: 60px; */
+  width: calc(100% - 300px);
+}
+.subscribe_banner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    height: 60px;
+    background-color: #8a2be2a1;
+
+}
+
+/* Covers section */
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+/* Footer */
+footer#site_footer {
+  background-color: yellowgreen;
+  height: 60px;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; */
+}
