@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/framework.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
   <div class="wrapper d-flex">
@@ -44,7 +46,7 @@
           <h1>PLAYLIST</h1>
           <div class="nav-left-playlist">
             <a href="#">
-              <img src="img/search.svg" alt="">
+              <i class="fas fa-plus-square"></i>
               <p>Create Playlist</p>
             </a>
           </div>
@@ -159,7 +161,19 @@
     </main>
 
     <footer id="site_footer">
-      <div class="player">player</div>
+      <div class="container album">
+        <div class="row">
+          <div class="col-lg-1">
+            <a href="#"><img class="album-image" src="img/sinister.jpeg" alt=""></a>
+            <a href="#"><p class="title-album">Sinister</p></a>
+            <a href="#"><p class="description-album">Album nome</p></a>
+          </div>
+          <div class="col-lg-1">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a> 
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
 
