@@ -63,6 +63,25 @@ body {
   .subscribe_banner {
     width: 100%;
   }
+  .covers_section {
+    width: 100%;
+  }
+  .title-album {
+    font-size: 0px;
+  }
+  .description-album {
+    font-size: 0px;
+  }
+  .fa-heart {
+    font-size: 0px;
+  }
+
+  .fa-folder {
+    font-size: 0px;
+  }
+  .volume {
+    display: none;
+  }
 }
 
 .logo {
@@ -235,7 +254,6 @@ aside.main_menu {
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 60px;
-  /* margin-top: 60px; */
   width: calc(100% - 300px);
 }
 .cover img {
@@ -303,7 +321,6 @@ footer {
   display: inline-block;
   bottom: 30%;
   position: absolute;
-  font-size: 15px;
   color: grey;
 }
 .fa-heart {
