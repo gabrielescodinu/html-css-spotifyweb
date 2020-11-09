@@ -15,7 +15,7 @@ a {
   flex-wrap: wrap;
 }
 body {
-  background-color: #333;
+  background: rgb(20, 25, 24);
   color: white;
   font-family: 'Roboto', sans-serif;
 }
@@ -26,6 +26,45 @@ body {
 }
 
 /* menu left */
+@media all and (max-width: 768px) {
+  .logo-container p {
+    display: none;
+  }
+  .logo-container img {
+    height: 30px;
+  }
+  .nav-left p {
+    display: none;
+  }
+  .playlist p {
+    display: none;
+  }
+  .playlist h1 {
+    display: none;
+  }
+  .playlist i {
+    font-size: 35px;
+  }
+  .playlist-name {
+    font-size: 0;
+  }
+  .profile p {
+    font-size: 0;
+  }
+  .install-app p {
+    font-size: 0;
+  }
+  .install-app hr {
+    display: none;
+  }
+  .main_menu {
+    max-width: 70px;
+  }
+  .subscribe_banner {
+    width: 100%;
+  }
+}
+
 .logo {
   height: 50px;
   margin: 20px;
@@ -34,7 +73,7 @@ body {
   position: relative;
 }
 .logo-container p {
-  display: inline-block;
+  left: 80px;
   top: 25%;
   position: absolute;
   font-size: 30px;
@@ -47,8 +86,8 @@ body {
   margin-left: 20px;
 }
 .nav-left p {
-  display: inline-block;
   position: absolute;
+  left: 60px;
   top: 20%;
   color: white;
   padding-left: 20px;
@@ -62,6 +101,7 @@ body {
 .nav-left-link:hover {
   border-left: 3px solid yellowgreen;
 }
+
 /* playlist */
 .playlist {
   margin-bottom: 100px;
@@ -78,7 +118,7 @@ body {
   color: white;
 }
 .nav-left-playlist p {
-  display: inline-block;
+  left: 50px;
   position: absolute;
   top: 25%;
   color: white;
@@ -98,6 +138,7 @@ body {
 .playlist-name:hover {
   color: white;
 }
+
 /* install app */
 .install-app {
   margin-left: 20px;
@@ -142,9 +183,10 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 300px);
+  width: 100%;
   height: 60px;
   background: rgb(8, 11, 18);
+  z-index: 10;
 }
 .subscribe_banner a {
   position: absolute;
@@ -180,8 +222,10 @@ nav a:hover {
   height: calc(100% - 60px);
 }
 aside.main_menu {
-  min-width: 300px;
+  width: 300px;
   background-color: black;
+  position: relative;
+  z-index: 20;
 }
 
 /* recently played */
@@ -238,7 +282,10 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 30;
 }
+
+/* artist */
 .album-image {
   height: 40px;
   margin: 20px;
@@ -262,12 +309,80 @@ footer {
 .fa-heart {
   position: absolute;
   top: 40%;
-  margin-left: 30px;
+  padding-left: 125px;
   color: white;
 }
 .fa-folder {
   color: white;
   position: absolute;
   top: 40%;
-  margin-left: 60px;
+  margin-left: 150px;
+}
+
+/* player */
+.player {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.fa-play-circle {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  color: white;
+}
+.fa-forward {
+  padding-left: 20px;
+  font-size: 20px;
+  color: white;
+}
+.fa-backward {
+  padding-right: 20px;
+  font-size: 20px;
+  color: white;
+}
+.fa-redo-alt {
+  padding-left: 20px;
+  font-size: 15px;
+  color: white;
+}
+.fa-random {
+  padding-right: 20px;
+  font-size: 15px;
+  color: white;
+}
+.time {
+  text-align: center;
+}
+.start-time {
+  display: inline-block;
+  padding-right: 20px;
+}
+.end-time {
+  display: inline-block;
+  padding-left: 20px;
+}
+.time-line {
+  border: 2px solid grey;
+  width: 300px;
+  display: inline-block;
+}
+@media all and (max-width: 768px) {
+  .time-line {
+    width: 150px;
+  }
+}
+
+/* volume */
+.volume {
+  text-align: center;
+}
+.volume i {
+  padding: 40px 10px;
+  color: white;
+}
+.volume-line {
+  border: 2px solid white;
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 5px;
 }
