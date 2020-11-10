@@ -75,7 +75,6 @@ body {
   .fa-heart {
     font-size: 0px;
   }
-
   .fa-folder {
     font-size: 0px;
   }
@@ -386,6 +385,14 @@ footer {
 @media all and (max-width: 768px) {
   .time-line {
     width: 150px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  .fa-heart {
+    font-size: 0px;
+  }
+  .fa-folder {
+    font-size: 0px;
   }
 }
 
